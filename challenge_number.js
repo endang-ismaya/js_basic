@@ -26,21 +26,27 @@ console.log(rmOutput); // 31 % 15 = 1
 ```
 */
 
-let x = Math.floor(Math.random() * 100) + 1;
-let y = Math.floor(Math.random() * 50) + 1;
+// Create a random number between 1 and 100 for x
+const x = Math.floor(Math.random() * 100) + 1;
 
-let sum = x + y;
-let difference = x - y;
-let product = x * y;
-let quotient = x / y;
-let rm = x % y;
+// Create a random number between 1 and 50 for y
+const y = Math.floor(Math.random() * 50) + 1;
 
-let sumOutput = `${x} + ${y} = ${sum}`;
-let differenceOutput = `${x} - ${y} = ${difference}`;
-let productOutput = `${x} * ${y} = ${product}`;
-let quotientOutput = `${x} / ${y} = ${quotient}`;
-let rmOutput = `${x} % ${y} = ${rm}`;
+// --- Perform Calculations ---
+const sum = x + y;
+const difference = x - y;
+const product = x * y;
+const quotient = x / y;
+const rm = x % y;
 
+// --- Create Output Strings ---
+const sumOutput = `${x} + ${y} = ${sum}`;
+const differenceOutput = `${x} - ${y} = ${difference}`;
+const productOutput = `${x} * ${y} = ${product}`;
+const quotientOutput = `${x} / ${y} = ${quotient}`;
+const rmOutput = `${x} % ${y} = ${rm}`;
+
+// --- Log the Results ---
 console.log(sumOutput);
 console.log(differenceOutput);
 console.log(productOutput);
