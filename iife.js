@@ -1,3 +1,5 @@
+// Immediately Invoked Function Expression
+
 (function () {
   const user = "Endang";
   console.log(user);
