@@ -1,3 +1,6 @@
+// =============
+// for loop
+// =============
 for (let i = 0; i <= 10; i++) {
   console.log(`Hello ${i}`);
 }
@@ -16,7 +19,9 @@ for (let i = 0; i < names.length; i++) {
   console.log(names[i]);
 }
 
+// =============
 // break and continue
+// =============
 for (let i = 0; i <= 20; i++) {
   if (i === 15) {
     break;
@@ -29,7 +34,9 @@ for (let i = 0; i <= 20; i++) {
   console.log(i);
 }
 
+// =============
 // while loop
+// =============
 let i = 0;
 
 while (i <= 10) {
@@ -50,9 +57,40 @@ while (i < numbers.length) {
   i++;
 }
 
+// =============
 // Do While
+// =============
 let x = 10;
 do {
   console.log("x is " + x);
   x++;
 } while (x <= 10);
+
+// =============
+// for of loops
+// =============
+const items = ["book", "table", "chair", "pen"];
+const users = [
+  { name: "brad", age: 30 },
+  { name: "john", age: 40 },
+  { name: "jane", age: 50 },
+];
+
+for (const item of items) {
+  console.log(item);
+}
+
+for (const user of users) {
+  console.log(user);
+}
+
+// =============
+// loops over Maps
+// =============
+const map = new Map();
+map.set("name", "Endang");
+map.set("age", 30);
+
+for (const [key, value] of map) {
+  console.log(key, value);
+}
