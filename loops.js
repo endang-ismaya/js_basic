@@ -94,3 +94,24 @@ map.set("age", 30);
 for (const [key, value] of map) {
   console.log(key, value);
 }
+
+// =============
+// for in
+// =============
+const colorObj = {
+  color1: "red",
+  color2: "blue",
+  color3: "green",
+};
+
+for (const key in colorObj) {
+  console.log(key, colorObj[key]);
+}
+
+const colorArr = ["red", "blue", "green"];
+
+for (const index in colorArr) {
+  console.log(index, colorArr[index]);
+}
+
+//
